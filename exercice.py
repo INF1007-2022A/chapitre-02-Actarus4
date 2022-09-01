@@ -9,12 +9,12 @@ def majuscule(mot):
                     if ord(mot[i])>123
                     nouveaumot+=mot[i]
                     else:
-                    nouveaumot+='ord(mot[i])-32'
-               else:
-                nouveaumot+='ord(mot[i])+32'
+                    nouveaumot+=char(ord(mot[i])-32)
+                else:
+                nouveaumot+=char(ord(mot[i])+32)
          else:
             nouveaumot+=mot[i]
-    return nouveaumot
+   return nouveaumot
 
 
 if __name__ == '__main__':
